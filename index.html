@@ -3,70 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Star Bus | Premium Somaliland Travel</title>
-  <link rel="icon" type="image/png" sizes="512x512" href="logo-favicon-copy.png">
-  <link rel="shortcut icon" type="image/png" href="logo-favicon-copy.png">
+  <meta name="description" content="Star Bus provides premium, safe, and reliable bus travel across Somaliland, connecting Hargeisa, Borama, and Burco with modern buses and professional service." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Star Bus" />
+  <meta name="keywords" content="Star Bus, Somaliland bus, Hargeisa, Borama, Burco, bus travel, Somaliland transport, VIP passenger transit, Ramadan travel" />
+  <meta name="theme-color" content="#042c24" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <title>Star Bus Ramadan Kareem | Premium Somaliland Travel</title>
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/" id="canonical-link" />
+  <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN.com/" id="alternate-en" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="icon" type="image/png" sizes="512x512" href="logo-favicon-copy.png" />
+  <link rel="shortcut icon" type="image/png" href="logo-favicon-copy.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="logo-favicon-copy.png" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Star Bus Ramadan Kareem | Premium Somaliland Travel" />
+  <meta property="og:description" content="Travel peacefully this Ramadan with Star Bus: trusted schedules, modern buses, and safe intercity journeys." />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/" id="og-url" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Star Bus" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/hero.jpeg" id="og-image" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Star Bus fleet ready for Ramadan travel across Somaliland" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Star Bus Ramadan Kareem | Premium Somaliland Travel" />
+  <meta name="twitter:description" content="Move with ease this Ramadan. Trusted Somaliland routes, premium comfort, and reliable service." />
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.com/hero.jpeg" id="twitter-image" />
+  <meta name="twitter:image:alt" content="Star Bus fleet ready for Ramadan travel across Somaliland" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
     :root {
-      --dark-green: #0a3f2f;
-      --mid-green: #0f6b4a;
-      --light-green: #1ec98b;
-      --ramadan-gold: #e7c46a;
-      --ramadan-glow: rgba(231, 196, 106, 0.28);
+      --night: #021f1a;
+      --night-soft: #07372d;
+      --emerald: #0f8b6c;
+      --mint: #43d4a7;
+      --gold: #efcb73;
+      --gold-soft: #fff0cb;
+      --ink: #071510;
       --white: #ffffff;
-      --soft-white: #f4f7f6;
-      --dark: #0b1f17;
+      --sand: #f7f4ea;
     }
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      background: var(--dark-green);
+      font-family: "Manrope", sans-serif;
       color: var(--white);
-      position: relative;
+      background:
+        radial-gradient(circle at 10% 6%, rgba(239, 203, 115, 0.25), transparent 32%),
+        radial-gradient(circle at 80% 14%, rgba(67, 212, 167, 0.2), transparent 36%),
+        linear-gradient(175deg, #042c24 0%, #041c17 60%, #03120f 100%);
       overflow-x: hidden;
+      position: relative;
     }
 
     body::before,
     body::after {
       content: "";
       position: fixed;
-      top: 70px;
-      width: 148px;
-      height: 258px;
+      width: 120px;
+      height: 210px;
+      top: 78px;
       background-size: contain;
+      background-position: center;
       background-repeat: no-repeat;
-      background-position: top center;
-      opacity: 0.52;
+      opacity: 0.58;
       pointer-events: none;
-      z-index: 1200;
-      animation: lanternSwing 5.5s ease-in-out infinite;
+      z-index: 900;
+      animation: lanternFloat 6s ease-in-out infinite;
+      filter: drop-shadow(0 0 22px rgba(239, 203, 115, 0.44));
       transform-origin: top center;
-      filter: drop-shadow(0 0 16px var(--ramadan-glow));
     }
 
     body::before {
-      left: 1.6%;
+      left: 2%;
       background-image: url("lantern 1.png");
     }
 
     body::after {
-      display: none;
+      right: 2%;
+      background-image: url("lantern 2.png");
+      animation-delay: 1.2s;
     }
 
-    @keyframes lanternSwing {
-      0%, 100% { transform: rotate(0deg) translateY(0); }
-      25% { transform: rotate(2.4deg) translateY(2px); }
-      75% { transform: rotate(-2.4deg) translateY(2px); }
+    @keyframes lanternFloat {
+      0%,
+      100% {
+        transform: rotate(0deg) translateY(0);
+      }
+      25% {
+        transform: rotate(2deg) translateY(2px);
+      }
+      75% {
+        transform: rotate(-2deg) translateY(4px);
+      }
+    }
+
+    @keyframes fadeRise {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     header {
@@ -76,8 +133,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.2rem 6%;
-      background: rgba(10,63,47,0.9);
+      gap: 1rem;
+      padding: 1rem 6%;
+      background: rgba(2, 23, 19, 0.86);
+      border-bottom: 1px solid rgba(239, 203, 115, 0.22);
       backdrop-filter: blur(10px);
     }
 
@@ -87,280 +146,440 @@
       gap: 0.8rem;
     }
 
+    .logo-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-flex;
+    }
+
     .logo img {
-      width: 70px;
-      height: 70px;
+      width: 62px;
+      height: 62px;
       object-fit: contain;
+      border-radius: 50%;
+      border: 1px solid rgba(239, 203, 115, 0.35);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
     }
 
     .logo h1 {
+      font-family: "Cairo", sans-serif;
       font-size: 1.4rem;
-      font-weight: 700;
+      letter-spacing: 0.5px;
     }
 
     .menu-toggle {
       display: none;
-      border: 1px solid rgba(255,255,255,0.28);
-      background: rgba(255,255,255,0.06);
-      color: var(--white);
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      cursor: pointer;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgba(239, 203, 115, 0.4);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--white);
+      cursor: pointer;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
     }
 
     nav a {
       color: var(--white);
       text-decoration: none;
-      margin-left: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 0.95rem;
       opacity: 0.9;
+      transition: 0.25s ease;
     }
 
     nav a:hover {
-      color: var(--light-green);
+      color: var(--gold);
+      opacity: 1;
+    }
+
+    .pill {
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(239, 203, 115, 0.48);
+      background: rgba(239, 203, 115, 0.11);
+      color: var(--gold-soft);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
     }
 
     section {
-      padding: 6rem 6%;
+      padding: 5.5rem 6%;
+      position: relative;
+      z-index: 1;
     }
 
-    /* HOME */
     #home {
       min-height: 100vh;
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.05fr 0.95fr;
       align-items: center;
-      gap: 3rem;
-      background:
-        radial-gradient(circle at 18% 22%, rgba(255,255,255,0.08) 0%, transparent 40%),
-        radial-gradient(circle at 72% 18%, var(--ramadan-glow) 0%, transparent 36%),
-        linear-gradient(135deg, var(--dark-green) 60%, var(--white) 40%);
-      color: var(--white);
-      position: relative;
+      gap: 2.8rem;
       overflow: hidden;
+      animation: fadeRise 0.8s ease both;
     }
 
     #home::before {
       content: "";
       position: absolute;
-      right: 38%;
-      top: 14%;
-      width: 130px;
-      height: 130px;
+      width: 165px;
+      height: 165px;
+      right: 44%;
+      top: 10%;
       border-radius: 50%;
-      box-shadow: 28px 0 0 0 rgba(255,255,255,0.2);
-      opacity: 0.55;
+      box-shadow: 35px 0 0 0 rgba(239, 203, 115, 0.8);
+      opacity: 0.3;
       pointer-events: none;
     }
 
     .hero-text h2 {
-      font-size: clamp(2.5rem, 4vw, 3.8rem);
-      line-height: 1.15;
-      margin-bottom: 1.2rem;
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(2.35rem, 4vw, 4.1rem);
+      line-height: 1.08;
+      margin: 1.15rem 0 1rem;
+      max-width: 680px;
     }
 
     .hero-text p {
-      max-width: 520px;
-      opacity: 0.95;
-      font-size: 1.1rem;
-      margin-bottom: 2.2rem;
+      font-size: 1.08rem;
+      max-width: 580px;
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.65;
+      margin-bottom: 2rem;
     }
 
     .hero-actions {
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
+      gap: 0.9rem;
     }
 
     .btn {
-      padding: 0.9rem 2rem;
-      border-radius: 40px;
       border: none;
-      font-weight: 600;
+      border-radius: 999px;
+      padding: 0.88rem 1.7rem;
+      font-weight: 700;
+      font-size: 0.94rem;
       cursor: pointer;
-      transition: 0.3s ease;
+      transition: 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--light-green), var(--ramadan-gold));
-      color: var(--dark);
+      background: linear-gradient(135deg, var(--gold), #f4dc9d 45%, #ffe8bc 100%);
+      color: var(--ink);
+      box-shadow: 0 10px 26px rgba(239, 203, 115, 0.25);
     }
 
     .btn-secondary {
       background: transparent;
-      border: 2px solid var(--light-green);
+      border: 1px solid rgba(255, 255, 255, 0.35);
       color: var(--white);
     }
 
-    .btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    .hero-image {
+      position: relative;
+      animation: fadeRise 1s ease 0.2s both;
+    }
+
+    .hero-image::after {
+      content: "";
+      position: absolute;
+      inset: -12px;
+      border-radius: 28px;
+      border: 1px solid rgba(239, 203, 115, 0.3);
+      pointer-events: none;
     }
 
     .hero-image img {
       width: 100%;
-      border-radius: 30px;
-      box-shadow: 0 40px 70px rgba(0,0,0,0.4);
+      border-radius: 24px;
+      max-height: 600px;
+      object-fit: cover;
+      box-shadow: 0 32px 60px rgba(0, 0, 0, 0.35);
     }
 
-    /* DESTINATIONS */
+    #blessing {
+      padding-top: 0;
+    }
+
+    .blessing-card {
+      background:
+        linear-gradient(135deg, rgba(239, 203, 115, 0.15), rgba(67, 212, 167, 0.08)),
+        rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(239, 203, 115, 0.3);
+      border-radius: 26px;
+      padding: 1.4rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      animation: fadeRise 1s ease 0.25s both;
+    }
+
+    .blessing-card p {
+      font-size: 0.98rem;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+    }
+
+    .blessing-meta {
+      font-family: "Cairo", sans-serif;
+      font-weight: 700;
+      color: var(--gold-soft);
+      font-size: 1.15rem;
+      white-space: nowrap;
+    }
+
     #destinations {
-      background: var(--soft-white);
-      color: #111;
+      background:
+        linear-gradient(180deg, rgba(247, 244, 234, 0.97), #f5efdf 72%, #efe6ce 100%);
+      color: #192620;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 4rem;
+      margin-bottom: 2.6rem;
     }
 
     .section-title h3 {
-      font-size: 2.4rem;
-      color: var(--dark-green);
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      color: #07382d;
+      margin-top: 0.9rem;
+    }
+
+    .section-title p {
+      max-width: 640px;
+      margin: 0.7rem auto 0;
+      color: #234236;
+      line-height: 1.6;
     }
 
     .destination-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.4rem;
     }
 
     .destination-card {
-      background: white;
-      border-radius: 24px;
+      background: #fff;
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      box-shadow: 0 14px 28px rgba(13, 54, 43, 0.14);
+      border: 1px solid rgba(239, 203, 115, 0.36);
+      transition: 0.28s ease;
       cursor: pointer;
-      transition: transform 0.4s ease;
     }
 
     .destination-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
+      box-shadow: 0 22px 36px rgba(13, 54, 43, 0.2);
     }
 
     .destination-card img {
       width: 100%;
-      height: 220px;
+      height: 205px;
       object-fit: cover;
     }
 
     .destination-card .content {
-      padding: 1.6rem;
+      padding: 1.15rem;
     }
 
     .destination-card h4 {
-      font-size: 1.5rem;
-      color: var(--dark-green);
+      font-family: "Cairo", sans-serif;
+      font-size: 1.4rem;
+      color: #0a4032;
+      margin-bottom: 0.3rem;
     }
 
-    /* ABOUT */
-    #about {
-      background: var(--dark-green);
+    .destination-card span {
+      font-size: 0.92rem;
+      color: #3a5a4f;
+    }
+
+    #ramadan {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(239, 203, 115, 0.2), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(67, 212, 167, 0.17), transparent 35%),
+        #062921;
+    }
+
+    .ramadan-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 1.3rem;
+      margin-top: 2rem;
+    }
+
+    .ramadan-card {
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 1.35rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .ramadan-card h4 {
+      font-family: "Cairo", sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--gold-soft);
+    }
+
+    .ramadan-card ul {
+      list-style: none;
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .ramadan-card li {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.5;
+      padding-left: 1.3rem;
+      position: relative;
+    }
+
+    .ramadan-card li::before {
+      content: "*";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
       align-items: center;
+      background: #031713;
     }
 
     .about-text h3 {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
+      font-family: "Cairo", sans-serif;
+      font-size: clamp(1.9rem, 3vw, 2.7rem);
+      margin: 1rem 0 0.8rem;
     }
 
     .about-text p {
-      opacity: 0.9;
-      margin-bottom: 1.2rem;
-      max-width: 520px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.86);
+      max-width: 560px;
+      margin-bottom: 1rem;
     }
 
     .about-stats {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
 
     .stat {
-      background: rgba(255,255,255,0.08);
-      padding: 2rem;
-      border-radius: 20px;
+      padding: 1.25rem;
+      border-radius: 16px;
+      border: 1px solid rgba(239, 203, 115, 0.26);
+      background: rgba(255, 255, 255, 0.04);
       text-align: center;
     }
 
     .stat h4 {
-      font-size: 2rem;
-      color: var(--light-green);
+      font-family: "Cairo", sans-serif;
+      font-size: 1.85rem;
+      color: var(--mint);
+      margin-bottom: 0.35rem;
+    }
+
+    .stat p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.92rem;
     }
 
     footer {
-      background: #071c14;
+      background: #020d0a;
       color: var(--white);
-      padding: 5.5rem 6% 3rem;
-      margin-top: 4rem;
+      padding: 4.5rem 6% 2.5rem;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 3rem;
+      gap: 2rem;
     }
 
     .footer-grid h3,
     .footer-grid h4 {
-      letter-spacing: 1px;
+      font-family: "Cairo", sans-serif;
+      letter-spacing: 0.5px;
+      color: var(--gold-soft);
     }
 
     .footer-grid p {
-      opacity: 0.75;
-      font-size: 0.95rem;
-      line-height: 1.8;
-      margin-top: 0.9rem;
+      color: rgba(255, 255, 255, 0.74);
+      margin-top: 0.8rem;
+      line-height: 1.7;
+      font-size: 0.94rem;
     }
 
     .social-row {
       display: flex;
-      gap: 1rem;
-      margin-top: 1.5rem;
+      gap: 0.7rem;
+      margin-top: 1rem;
     }
 
     .social-btn {
-      width: 44px;
-      height: 44px;
+      width: 41px;
+      height: 41px;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       color: var(--white);
       text-decoration: none;
-      background: rgba(255,255,255,0.08);
-      transition: 0.3s ease;
-      font-size: 1.05rem;
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: 0.25s ease;
     }
 
     .social-btn:hover {
-      background: var(--ramadan-gold);
-      color: #071c14;
-      transform: translateY(-4px);
+      background: var(--gold);
+      color: #02120e;
+      transform: translateY(-3px);
     }
 
     .footer-note {
       text-align: center;
-      margin-top: 3.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      font-size: 0.85rem;
-      opacity: 0.6;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.83rem;
     }
 
     .footer-credit {
       margin-top: 2.5rem;
       padding: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
       text-align: center;
-      background: linear-gradient(135deg, rgba(30,201,139,0.18), rgba(231,196,106,0.2));
+      background: linear-gradient(135deg, rgba(67, 212, 167, 0.16), rgba(239, 203, 115, 0.2));
       border-radius: 18px;
     }
 
@@ -374,114 +593,112 @@
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 3px;
-      opacity: 0.6;
+      opacity: 0.65;
       margin-bottom: 0.6rem;
     }
 
     .footer-credit strong {
       display: inline-block;
+      font-family: "Cairo", sans-serif;
       font-size: 1rem;
       letter-spacing: 2px;
       color: var(--white);
       padding: 0.4rem 0.9rem;
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 999px;
     }
 
-
-    @media (max-width: 900px) {
+    @media (max-width: 960px) {
       header {
         flex-wrap: wrap;
-        gap: 0.8rem;
         padding: 0.9rem 5%;
       }
+
       .menu-toggle {
         display: inline-flex;
       }
-      .logo img {
-        width: 56px;
-        height: 56px;
-      }
-      .logo h1 {
-        font-size: 1.2rem;
-      }
+
       nav {
         display: none;
         width: 100%;
-        margin-top: 0.2rem;
-        padding: 0.9rem 0.8rem;
-        border-radius: 14px;
-        background: rgba(7, 28, 20, 0.82);
-        border: 1px solid rgba(255,255,255,0.08);
-        backdrop-filter: blur(8px);
         justify-content: center;
         flex-wrap: wrap;
-        gap: 0.5rem 1.1rem;
+        padding: 0.75rem;
+        border-radius: 14px;
+        background: rgba(7, 45, 36, 0.87);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        gap: 0.75rem 1.1rem;
       }
+
       header.menu-open nav {
         display: flex;
       }
-      nav a {
-        margin-left: 0;
-        font-size: 0.95rem;
-      }
+
       section {
         padding: 4.5rem 5%;
       }
-      #home, #about {
+
+      #home,
+      #about,
+      .ramadan-grid {
         grid-template-columns: 1fr;
-        text-align: center;
       }
+
       #home {
         min-height: auto;
-        gap: 2rem;
+        text-align: center;
         padding-top: 5.6rem;
       }
+
       #home::before {
-        right: 12%;
-        top: 9%;
-        width: 90px;
-        height: 90px;
-        box-shadow: 20px 0 0 0 rgba(255,255,255,0.18);
+        right: 14%;
+        top: 8%;
+        width: 125px;
+        height: 125px;
       }
-      .hero-text h2 {
-        font-size: clamp(2rem, 8vw, 2.7rem);
+
+      .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
       }
-      .hero-text p, .about-text p { margin: auto; }
-      .hero-actions { justify-content: center; }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
       .hero-image img {
-        max-width: 560px;
+        max-width: 620px;
         margin: 0 auto;
         display: block;
       }
-      .destination-grid {
+
+      .blessing-card {
         grid-template-columns: 1fr;
-        gap: 1.4rem;
-      }
-      .section-title {
-        margin-bottom: 2.2rem;
-      }
-      .about-stats {
-        gap: 1rem;
-      }
-      .stat {
-        padding: 1.4rem;
-      }
-      .footer-grid {
-        gap: 2rem;
         text-align: center;
       }
+
+      .about-text,
+      .section-title {
+        text-align: center;
+      }
+
+      .about-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       .social-row {
         justify-content: center;
       }
+
+      .footer-grid {
+        text-align: center;
+      }
+
       body::before,
       body::after {
-        width: 90px;
-        height: 168px;
-        opacity: 0.42;
-      }
-      body::before {
-        left: 0.8%;
+        width: 95px;
+        height: 170px;
       }
     }
 
@@ -489,159 +706,313 @@
       section {
         padding: 4rem 1rem;
       }
-      #home {
-        padding-top: 5.2rem;
+
+      .logo img {
+        width: 54px;
+        height: 54px;
       }
+
+      .logo h1 {
+        font-size: 1.22rem;
+      }
+
       .hero-actions {
         flex-direction: column;
       }
+
       .btn {
         width: 100%;
-        max-width: 320px;
+        max-width: 330px;
       }
+
       .about-stats {
         grid-template-columns: 1fr;
       }
-      body::before {
-        width: 74px;
-        height: 140px;
-        top: 78px;
-        opacity: 0.36;
+
+      body::before,
+      body::after {
+        top: 68px;
+        width: 82px;
+        height: 150px;
+        opacity: 0.68;
       }
     }
   </style>
+
+  <script type="application/ld+json" id="structured-data">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Star Bus",
+          "url": "https://YOUR-DOMAIN.com/",
+          "description": "Premium bus travel across Somaliland.",
+          "inLanguage": "en"
+        },
+        {
+          "@type": ["Organization", "TravelAgency"],
+          "name": "Star Bus",
+          "url": "https://YOUR-DOMAIN.com/",
+          "logo": "https://YOUR-DOMAIN.com/logo-favicon-copy.png",
+          "image": "https://YOUR-DOMAIN.com/hero.jpeg",
+          "description": "Somaliland-based transport company focused on safe and reliable intercity bus travel.",
+          "telephone": "+252637762739",
+          "areaServed": "Somaliland",
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+252637762739",
+              "contactType": "customer service",
+              "areaServed": "Somaliland",
+              "availableLanguage": ["en", "so"]
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
+
 <body>
+  <header>
+    <a class="logo-link" href="#home" aria-label="Go to homepage">
+      <div class="logo">
+        <img src="logoo.png" alt="Star Bus Logo" />
+        <h1>Star Bus</h1>
+      </div>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#destinations">Routes</a>
+      <a href="#ramadan">Ramadan Care</a>
+      <a href="#about">About</a>
+      <a href="#" onclick="bookGeneral()">Book</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="logo">
-    <img src="logoo.png" alt="Star Bus Logo">
-    <h1>Star Bus</h1>
-  </div>
-  <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#destinations">Destinations</a>
-    <a href="#about">About</a>
-    <a href="#" onclick="bookGeneral()">Book</a>
-  </nav>
-</header>
+  <main>
+    <section id="home">
+      <div class="hero-text">
+        <span class="pill"><i class="fa-solid fa-moon"></i> Ramadan Kareem</span>
+        <h2>Travel With Peace This Ramadan Across Somaliland</h2>
+        <p>
+          Move between Hargeisa, Borama, and Burco with trusted schedules, respectful service, and premium comfort.
+          Star Bus keeps your Ramadan journey smooth from suhoor to iftar.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="bookGeneral()">Book a Seat on WhatsApp</button>
+          <button class="btn btn-secondary" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">View Routes</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="hero.jpeg" alt="Star Bus fleet for Ramadan travel" fetchpriority="high" />
+      </div>
+    </section>
 
-<section id="home">
-  <div class="hero-text">
-    <h2>Somaliland’s Most Trusted<br>Bus Travel Experience</h2>
-    <p>Luxury buses, professional drivers, and safe journeys connecting Somaliland’s most important cities.</p>
-    <div class="hero-actions">
-      <button class="btn btn-primary" onclick="bookGeneral()">Book a Seat</button>
-      <button class="btn btn-secondary" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">Explore Routes</button>
-    </div>
-  </div>
-  <div class="hero-image">
-    <img src="hero.jpeg" alt="Star Bus Fleet">
-  </div>
-</section>
+    <section id="blessing">
+      <div class="blessing-card">
+        <p>
+          Wishing all our passengers a blessed Ramadan. May every journey be safe, every destination be easy,
+          and every reunion be filled with barakah.
+        </p>
+        <div class="blessing-meta">Safe Travel, Every Day</div>
+      </div>
+    </section>
 
-<section id="destinations">
-  <div class="section-title">
-    <h3>Our Routes</h3>
-  </div>
-  <div class="destination-grid">
-    <div class="destination-card" onclick="bookDestination('Borama')">
-      <img src="Borama.jpg" alt="Borama">
-      <div class="content"><h4>Borama</h4></div>
-    </div>
-    <div class="destination-card" onclick="bookDestination('Hargeisa')">
-      <img src="Hergeisa.jpg" alt="Hargeisa">
-      <div class="content"><h4>Hargeisa</h4></div>
-    </div>
-    <div class="destination-card" onclick="bookDestination('Burco')">
-      <img src="Burco.png" alt="Burco">
-      <div class="content"><h4>Burco</h4></div>
-    </div>
-  </div>
-</section>
+    <section id="destinations">
+      <div class="section-title">
+        <span class="pill"><i class="fa-solid fa-star-and-crescent"></i> Main Routes</span>
+        <h3>Popular Ramadan Destinations</h3>
+        <p>Tap any city to open booking instantly on WhatsApp with your selected destination.</p>
+      </div>
+      <div class="destination-grid">
+        <div class="destination-card" onclick="bookDestination('Borama')">
+          <img src="Borama.jpg" alt="Borama" loading="lazy" decoding="async" />
+          <div class="content">
+            <h4>Borama</h4>
+            <span>Comfortable day and evening departures</span>
+          </div>
+        </div>
+        <div class="destination-card" onclick="bookDestination('Hargeisa')">
+          <img src="Hergeisa.jpg" alt="Hargeisa" loading="lazy" decoding="async" />
+          <div class="content">
+            <h4>Hargeisa</h4>
+            <span>Reliable central route with daily service</span>
+          </div>
+        </div>
+        <div class="destination-card" onclick="bookDestination('Burco')">
+          <img src="Burco.png" alt="Burco" loading="lazy" decoding="async" />
+          <div class="content">
+            <h4>Burco</h4>
+            <span>Smooth intercity travel for family visits</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-  <div class="about-text">
-    <h3>Why Star Bus?</h3>
-    <p>We are a Somaliland-based transport company focused on safety, comfort, and reliability.</p>
-    <p>Our mission is to modernize regional bus travel with professional service and premium vehicles.</p>
-    <button class="btn btn-primary" onclick="bookGeneral()">Contact & Book</button>
-  </div>
-  <div class="about-stats">
-    <div class="stat"><h4>10+</h4><p>Modern Buses</p></div>
-    <div class="stat"><h4>3</h4><p>Main Cities</p></div>
-    <div class="stat"><h4>1000+</h4><p>Happy Travelers</p></div>
-    <div class="stat"><h4>24/7</h4><p>Support</p></div>
-  </div>
-</section>
+    <section id="ramadan">
+      <div class="section-title">
+        <span class="pill"><i class="fa-solid fa-heart"></i> Ramadan Care</span>
+        <h3>Thoughtful Service During Ramadan</h3>
+      </div>
+      <div class="ramadan-grid">
+        <article class="ramadan-card">
+          <h4>Before You Travel</h4>
+          <ul>
+            <li>Book early for peak Ramadan days and weekend family trips.</li>
+            <li>Arrive at pickup points 20 minutes before departure.</li>
+            <li>Keep your phone active for schedule updates and driver coordination.</li>
+          </ul>
+        </article>
+        <article class="ramadan-card">
+          <h4>Onboard Comfort</h4>
+          <ul>
+            <li>Clean buses with attentive crews and professional driving.</li>
+            <li>Supportive stops aligned with long-route travel needs.</li>
+            <li>Friendly customer support available 24/7 on WhatsApp.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h3>STAR BUS</h3>
-      <p>Premium travel across Somaliland with modern fleets, trusted crews, and reliable schedules.</p>
-      <div class="social-row">
-        <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <section id="about">
+      <div class="about-text">
+        <span class="pill"><i class="fa-solid fa-bus"></i> Why Star Bus</span>
+        <h3>Built for Trust, Safety, and Consistency</h3>
+        <p>
+          Star Bus is a Somaliland-based transport company focused on reliable intercity service with modern vehicles
+          and trained crews.
+        </p>
+        <p>
+          During Ramadan and throughout the year, we prioritize on-time departures, passenger comfort, and simple booking.
+        </p>
+        <button class="btn btn-primary" onclick="bookGeneral()">Contact and Book Now</button>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><h4>10+</h4><p>Modern Buses</p></div>
+        <div class="stat"><h4>3</h4><p>Main Cities</p></div>
+        <div class="stat"><h4>1000+</h4><p>Happy Travelers</p></div>
+        <div class="stat"><h4>24/7</h4><p>Booking Support</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>STAR BUS</h3>
+        <p>Premium travel across Somaliland with modern fleets, trusted crews, and reliable Ramadan-ready schedules.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/profile.php?id=100063597552247" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>24/7 Hotline: +252 637762739</p>
+        <p>Main Office: Hargeisa, Somaliland</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p>VIP Passenger Transit</p>
+        <p>Secure Cargo Delivery</p>
       </div>
     </div>
-    <div>
-      <h4>Contact Us</h4>
-      <p>24/7 Hotline: +252 637762739</p>
-      <p>Main Office: Hargeisa, SL</p>
+
+    <div class="footer-note">&copy; 2026 Star Bus - Ramadan Kareem to all our passengers</div>
+
+    <div class="footer-credit">
+      <a class="footer-credit-link" href="https://raazimtech.github.io/Raazim-tech/" target="_blank" rel="noopener">
+        <p>Made By</p>
+        <strong>RT Solutions</strong>
+      </a>
     </div>
-    <div>
-      <h4>Services</h4>
-      <p>VIP Passenger Transit</p>
-      <p>Secure Cargo Delivery</p>
-    </div>
-  </div>
-  <div class="footer-note">&copy; 2026 Star Bus &middot; Built for Somaliland</div>
-  <div class="footer-credit">
-    <a class="footer-credit-link" href="https://raazimtech.github.io/Raazim-tech/" target="_blank" rel="noopener">
-      <p>Made By</p>
-      <strong>RT Solutions</strong>
-    </a>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  const phoneNumber = '252637762739';
-  const header = document.querySelector('header');
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelectorAll('nav a');
+  <noscript>
+    <p style="padding:1rem;text-align:center;background:#071c14;color:#fff;">For quick booking, contact Star Bus on WhatsApp: +252 637762739.</p>
+  </noscript>
 
-  function closeMobileMenu() {
-    header.classList.remove('menu-open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  }
+  <script>
+    function applyAbsoluteSeoUrls() {
+      const origin = window.location.origin;
+      const pageUrl = `${origin}${window.location.pathname}`;
+      const heroUrl = `${origin}/hero.jpeg`;
+      const logoUrl = `${origin}/logo-favicon-copy.png`;
 
-  menuToggle.addEventListener('click', () => {
-    const isOpen = header.classList.toggle('menu-open');
-    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
+      const canonical = document.getElementById("canonical-link");
+      const alternateEn = document.getElementById("alternate-en");
+      const ogUrl = document.getElementById("og-url");
+      const ogImage = document.getElementById("og-image");
+      const twitterImage = document.getElementById("twitter-image");
+      const structuredData = document.getElementById("structured-data");
 
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 900) closeMobileMenu();
+      if (canonical) canonical.setAttribute("href", pageUrl);
+      if (alternateEn) alternateEn.setAttribute("href", pageUrl);
+      if (ogUrl) ogUrl.setAttribute("content", pageUrl);
+      if (ogImage) ogImage.setAttribute("content", heroUrl);
+      if (twitterImage) twitterImage.setAttribute("content", heroUrl);
+
+      if (structuredData) {
+        try {
+          const payload = JSON.parse(structuredData.textContent);
+          payload["@graph"] = payload["@graph"].map((item) => {
+            if (item["@type"] === "WebSite") {
+              item.url = `${origin}/`;
+            }
+            if (Array.isArray(item["@type"]) && item.name === "Star Bus") {
+              item.url = `${origin}/`;
+              item.logo = logoUrl;
+              item.image = heroUrl;
+            }
+            return item;
+          });
+          structuredData.textContent = JSON.stringify(payload);
+        } catch (error) {
+          // Keep original JSON-LD if parsing fails.
+        }
+      }
+    }
+
+    applyAbsoluteSeoUrls();
+
+    const phoneNumber = "252637762739";
+    const header = document.querySelector("header");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelectorAll("nav a");
+
+    function closeMobileMenu() {
+      header.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = header.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
-  });
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 900) closeMobileMenu();
-  });
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 960) closeMobileMenu();
+      });
+    });
 
-  function bookGeneral() {
-    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent('Hello Star Bus, I would like to book a trip.')}`, '_blank');
-  }
-  function bookDestination(city) {
-    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent('Hello Star Bus, I would like to book a trip to ' + city)}`, '_blank');
-  }
-</script>
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 960) closeMobileMenu();
+    });
 
+    function bookGeneral() {
+      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent("Hello Star Bus, I would like to book a trip.")}`, "_blank");
+    }
+
+    function bookDestination(city) {
+      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent("Hello Star Bus, I would like to book a trip to " + city)}`, "_blank");
+    }
+  </script>
 </body>
 </html>
