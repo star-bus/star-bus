@@ -137,6 +137,11 @@
     .hours-panel h3{font-size:.95rem;color:var(--deep);margin-bottom:8px}
     .hours-list{display:grid;gap:5px;color:#5e7569;font-size:.8rem}
     .hours-list strong{color:#234a37}
+    .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:900;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#25d366;color:#fff;font-size:1.85rem;box-shadow:0 7px 22px rgba(0,0,0,.2);transition:transform .2s,box-shadow .2s}
+    .whatsapp-float:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 26px rgba(0,0,0,.24)}
+    .whatsapp-float:focus-visible{outline:3px solid #064b35;outline-offset:4px}
+    .whatsapp-float .whatsapp-tooltip{position:absolute;right:68px;white-space:nowrap;background:#12352a;color:#fff;border-radius:8px;padding:8px 11px;font:700 .75rem Manrope,Arial,sans-serif;opacity:0;pointer-events:none;transform:translateX(5px);transition:opacity .2s,transform .2s}
+    .whatsapp-float:hover .whatsapp-tooltip,.whatsapp-float:focus-visible .whatsapp-tooltip{opacity:1;transform:translateX(0)}
     body.booking-open{overflow:hidden}
     @media(max-width:480px){.booking-card{padding:22px 18px}.booking-two{grid-template-columns:1fr}.hours-panel{padding:17px}.booking-top h2{font-size:1.35rem}}
     @media(max-width:900px){.nav-links{gap:16px}.hero{min-height:430px}.hero:after{background:linear-gradient(90deg,rgba(248,253,250,.97),rgba(248,253,250,.85) 48%,rgba(248,253,250,.15))}.trust-grid{grid-template-columns:repeat(2,1fr)}.destinations{gap:15px}.destination-card>img{height:155px}.care-grid{grid-template-columns:repeat(2,1fr)}.care-card:nth-child(2){border-right:0}.care-card{border-bottom:1px solid #dcebe2}.care-card:nth-child(n+3){border-bottom:0}.footer-grid{grid-template-columns:repeat(2,1fr)}}
@@ -207,6 +212,7 @@
       </div>
     </section>
       </main>
+  <a class="whatsapp-float" href="https://wa.me/252637762739?text=Hello%20Star%20Bus%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat with Star Bus on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="whatsapp-tooltip" aria-hidden="true">Chat with us on WhatsApp</span></a>
   <div class="booking-overlay" id="bookingOverlay" aria-hidden="true">
     <section class="booking-card" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
       <div class="booking-top"><div><span class="eyebrow"><i class="fa-solid fa-ticket"></i> Trip request</span><h2 id="bookingTitle">Book your journey</h2><p>Fill in your trip details, then continue to WhatsApp.</p></div><button class="booking-close" id="bookingClose" type="button" aria-label="Close booking form"><i class="fa-solid fa-xmark"></i></button></div>
