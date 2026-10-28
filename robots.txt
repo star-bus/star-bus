@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://star-bus.github.io/star-bus/sitemap.xml
+Sitemap: https://example.com/sitemap.xml
