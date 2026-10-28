@@ -285,7 +285,7 @@
         'WhatsApp / phone: '+String(data.get('phone')).trim(),
         '',
         'Please confirm availability and departure details. Thank you.'
-      ].join('\\n');
+      ].join('\n');
       window.open('https://wa.me/252637762739?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
       closeBooking();
     });
